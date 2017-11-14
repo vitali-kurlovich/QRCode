@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExampleQR Code View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ExampleQRCodeViewController" customModule="QRCodeViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="CR0-zX-kvI" customClass="QRCodeView" customModule="QRCode">
+                                <rect key="frame" x="66" y="28" width="188" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="CR0-zX-kvI" secondAttribute="centerX" id="eT8-iZ-l0o"/>
+                                    <constraint firstAttribute="width" secondItem="CR0-zX-kvI" secondAttribute="height" multiplier="1:1" id="zLb-sa-Iwq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="qr" value="6"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ev7-RE-rEg">
+                                <rect key="frame" x="30.5" y="240" width="259" height="74"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R3k-yp-HKM">
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="29"/>
+                                        <segments>
+                                            <segment title="30%" width="64"/>
+                                            <segment title="25%" width="64"/>
+                                            <segment title="15%" width="64"/>
+                                            <segment title="7%" width="64"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="onChangeErrorCorrectionLevelWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="iHI-1g-Ngm"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4bA-Ey-Gkq">
+                                        <rect key="frame" x="0.0" y="44" width="259" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" smartDashesType="yes"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="vA7-lr-3DW"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="UBq-0g-Aoh">
+                                <rect key="frame" x="52" y="330" width="216" height="112"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u8U-rh-yP4">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="BmJ-Vy-iqf"/>
+                                            <constraint firstAttribute="width" constant="72" id="yBX-0g-T5m"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="10J-oK-suI">
+                                        <rect key="frame" x="104" y="0.0" width="112" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="8vb-xW-zs7"/>
+                                            <constraint firstAttribute="width" constant="112" id="efn-7J-Yd5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ev7-RE-rEg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="CZt-fa-9Fx"/>
+                            <constraint firstItem="UBq-0g-Aoh" firstAttribute="top" secondItem="ev7-RE-rEg" secondAttribute="bottom" constant="16" id="DjY-by-f17"/>
+                            <constraint firstItem="CR0-zX-kvI" firstAttribute="width" secondItem="CR0-zX-kvI" secondAttribute="height" multiplier="1:1" id="FVO-fV-dne"/>
+                            <constraint firstItem="CR0-zX-kvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FYF-iI-3RW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ev7-RE-rEg" secondAttribute="trailing" constant="20" id="Uv1-9d-XUJ"/>
+                            <constraint firstItem="CR0-zX-kvI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WBt-0w-L9l">
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="ev7-RE-rEg" firstAttribute="top" secondItem="CR0-zX-kvI" secondAttribute="bottom" constant="24" id="ZTP-iW-Mk8"/>
+                            <constraint firstItem="CR0-zX-kvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aeb-3e-8Ak"/>
+                            <constraint firstItem="ev7-RE-rEg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eyn-r5-KIn"/>
+                            <constraint firstItem="ev7-RE-rEg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fkx-be-aru"/>
+                            <constraint firstItem="CR0-zX-kvI" firstAttribute="centerX" secondItem="CR0-zX-kvI" secondAttribute="centerX" id="kFZ-Bs-sZJ"/>
+                            <constraint firstItem="ev7-RE-rEg" firstAttribute="leading" secondItem="CR0-zX-kvI" secondAttribute="trailing" constant="20" id="nFO-bV-tip"/>
+                            <constraint firstItem="UBq-0g-Aoh" firstAttribute="centerX" secondItem="ev7-RE-rEg" secondAttribute="centerX" id="ysH-yT-kHg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Uv1-9d-XUJ"/>
+                                <exclude reference="FYF-iI-3RW"/>
+                                <exclude reference="aeb-3e-8Ak"/>
+                                <exclude reference="CZt-fa-9Fx"/>
+                                <exclude reference="ZTP-iW-Mk8"/>
+                                <exclude reference="eyn-r5-KIn"/>
+                                <exclude reference="fkx-be-aru"/>
+                                <exclude reference="nFO-bV-tip"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Uv1-9d-XUJ"/>
+                                <exclude reference="FYF-iI-3RW"/>
+                                <include reference="aeb-3e-8Ak"/>
+                                <exclude reference="CZt-fa-9Fx"/>
+                                <exclude reference="ZTP-iW-Mk8"/>
+                                <exclude reference="eyn-r5-KIn"/>
+                                <include reference="fkx-be-aru"/>
+                                <include reference="nFO-bV-tip"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Uv1-9d-XUJ"/>
+                                <include reference="FYF-iI-3RW"/>
+                                <exclude reference="aeb-3e-8Ak"/>
+                                <include reference="CZt-fa-9Fx"/>
+                                <include reference="ZTP-iW-Mk8"/>
+                                <include reference="eyn-r5-KIn"/>
+                                <exclude reference="fkx-be-aru"/>
+                                <exclude reference="nFO-bV-tip"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="CF7-g1-lJi" appends="YES" id="VsZ-OP-0f3"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="errorLevelControl" destination="R3k-yp-HKM" id="2JH-6y-UKV"/>
+                        <outlet property="qrCodeView" destination="CR0-zX-kvI" id="UCp-yh-hl9"/>
+                        <outlet property="qrLargeImage" destination="10J-oK-suI" id="5N6-ji-eVV"/>
+                        <outlet property="qrSmallImage" destination="u8U-rh-yP4" id="7Nl-qQ-uBv"/>
+                        <outlet property="qrTextField" destination="4bA-Ey-Gkq" id="3GK-xW-rLs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CF7-g1-lJi">
+                    <connections>
+                        <action selector="onTapWithRecognizer:" destination="BYZ-38-t0r" id="CIR-Up-6G6"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="135" y="114.08450704225352"/>
+        </scene>
+    </scenes>
+</document>
