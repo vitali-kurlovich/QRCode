@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QRCode"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "Simple QR-code generator writen in Swift"
 
   # This description is used to generate tags and improve search results.
@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "Simple QR-code generator writen in Swift"
 
   s.homepage     = "https://github.com/vitali-kurlovich/QRCode"
   s.screenshots  = "https://github.com/vitali-kurlovich/QRCode/blob/master/ScreenShot.png?raw=true"
@@ -38,8 +37,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "LICENSE" }
+  #s.license      = "MIT"
+   s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,7 +63,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-   s.platform     = :ios, "9.0"
+   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
