@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QRCode"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "Simple QR-code generator writen in Swift"
 
   # This description is used to generate tags and improve search results.
