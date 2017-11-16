@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QRCode"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Simple QR-code generator writen in Swift"
 
   # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-   s.platform     = :ios, "8.0"
+   s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -92,8 +92,8 @@ Pod::Spec.new do |s|
  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
  #s.exclude_files = "Classes/Exclude"
 
- s.source_files = "QRCode/QRCode/**/*.{swift}"
- s.swift-version = 4.0
+ s.source_files = "QRCode/QRCode/**/*.{h,swift}"
+
 
   # s.public_header_files = "Classes/**/*.h"
 
