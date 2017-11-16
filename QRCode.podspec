@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "Simple QR-code generator writen in Swift"
+  s.description  = "QR-code generator writen in Swift based on https://github.com/kazuhikoarase/qrcode-generator"
 
   s.homepage     = "https://github.com/vitali-kurlovich/QRCode"
   s.screenshots  = "https://github.com/vitali-kurlovich/QRCode/blob/master/ScreenShot.png?raw=true"
@@ -92,7 +92,8 @@ Pod::Spec.new do |s|
  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
  #s.exclude_files = "Classes/Exclude"
 
- s.source_files = "QRCode/**/*.{swift}"
+ s.source_files = "QRCode/QRCode/**/*.{swift}"
+ s.swift-version = 4.0
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -130,7 +131,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
