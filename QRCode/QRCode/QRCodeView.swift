@@ -22,6 +22,12 @@ public class QRCodeView: UIView {
 	@IBInspectable
 	public var text:String?  {
 		didSet {
+			self.data = text?.data(using: .shiftJIS, allowLossyConversion: true)!
+		}
+	};
+	
+	public var data:Data?  {
+		didSet {
 			updateQRCode()
 			updatePathLayer()
 		}
@@ -67,8 +73,8 @@ public class QRCodeView: UIView {
 	
 	private func updateQRCode() {
 		do {
-			if ((text) != nil) {
-				qrCode = try QRCode(text!, errorCorrectionLevel)
+			if ((data) != nil) {
+				qrCode = try QRCode(data!, errorCorrectionLevel)
 			} else {
 				qrCode = try QRCode("", errorCorrectionLevel)
 			}

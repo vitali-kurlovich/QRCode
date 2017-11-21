@@ -5,6 +5,7 @@
 //  Created by Vitali Kurlovich on 11/8/17.
 //
 
+import Foundation
 
 enum QRCodeError: Error {
 	case QRCodeErrorBufferOverflow(bufferLenght:Int, totalDataCount:Int)
@@ -30,6 +31,11 @@ final class QRCodeProcessor {
 	
 	func addData(data:String) {
 		addData(data, QRUtil.getMode(data) );
+	}
+	
+	
+	func addData(_ data:Data) {
+		addData(QR8BitByte(data))
 	}
 	
 	func addData(_ data:String, _ mode:QRData.QRMode) {
@@ -398,23 +404,18 @@ final class QRCodeProcessor {
 		return data;
 	}
 	
-	static func getMinimumQRCode(_ data:String, _ errorCorrectionLevel:QRCode.ErrorCorrectionLevel) throws  -> [[Bool]] {
-		
-		let mode = QRUtil.getMode(data);
-		
-		let qr = QRCodeProcessor();
-		qr.errorCorrectionLevel = errorCorrectionLevel;
-		qr.addData(data, mode);
-		
+	
+	private static func getMinimumQRCode(_ qr:QRCodeProcessor, _ mode:QRData.QRMode) throws  -> [[Bool]] {
+	
 		let length = qr.getData(0).lenght;
 		
 		for typeNumber in 1...10 {
-			if (length <= QRUtil.getMaxLength(typeNumber, mode, errorCorrectionLevel) ) {
+			if (length <= QRUtil.getMaxLength(typeNumber, mode, qr.errorCorrectionLevel) ) {
 				qr.typeNumber = typeNumber;
 				break;
 			}
 		}
-	
+		
 		try qr.make();
 		
 		var modules = [[Bool]](repeatElement([Bool](repeatElement(false, count: qr.moduleCount)), count:qr.moduleCount))
@@ -426,5 +427,26 @@ final class QRCodeProcessor {
 		}
 		
 		return modules
+	}
+	
+	static func getMinimumQRCode(_ data:String, _ errorCorrectionLevel:QRCode.ErrorCorrectionLevel) throws  -> [[Bool]] {
+		
+		let mode = QRUtil.getMode(data);
+		
+		let qr = QRCodeProcessor();
+		qr.errorCorrectionLevel = errorCorrectionLevel;
+		qr.addData(data, mode);
+		
+		return try getMinimumQRCode(qr, mode)
+	}
+	
+	
+	static func getMinimumQRCode(_ data:Data, _ errorCorrectionLevel:QRCode.ErrorCorrectionLevel) throws  -> [[Bool]] {
+		
+		let qr = QRCodeProcessor();
+		qr.errorCorrectionLevel = errorCorrectionLevel;
+		qr.addData(data);
+	
+		return try getMinimumQRCode(qr, QRData.QRMode.MODE_8BIT_BYTE)
 	}
 }

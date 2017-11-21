@@ -6,6 +6,8 @@
 //  Copyright © 2017 Vitali Kurlovich. All rights reserved.
 //
 
+import Foundation
+
  public struct QRCode {
 	
 	public enum ErrorCorrectionLevel : Int {
@@ -30,7 +32,7 @@
 		case H = 2;
 	}
 	
-	public let data : String
+	public let data : Data
 	public let errorCorrection : ErrorCorrectionLevel
 	public let modules:[[Bool]]
 	
@@ -46,13 +48,15 @@
 	
 	
 	public init(_ data:String, _ errorCorrection : ErrorCorrectionLevel = .H) throws {
+		try self.init(data.data(using: .shiftJIS, allowLossyConversion: true)!, errorCorrection)
+	}
+	
+	public init(_ data:Data, _ errorCorrection : ErrorCorrectionLevel = .H) throws {
 		self.data = data
 		self.errorCorrection = errorCorrection
 		
-		modules = try QRCodeProcessor.getMinimumQRCode(self.data, self.errorCorrection)
+		modules = try QRCodeProcessor.getMinimumQRCode(data, self.errorCorrection)
 	}
-	
-	
 }
 
 extension QRCode : Equatable {
