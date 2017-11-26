@@ -10,7 +10,7 @@ import UIKit
 import QRCode
 
 
-class ExampleQRCodeViewController: UIViewController , UITextFieldDelegate {
+class ExampleViewController: UIViewController , UITextFieldDelegate {
 	
 	@IBOutlet weak var qrCodeView: QRCodeView?
 	@IBOutlet weak var errorLevelControl: UISegmentedControl?

@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import QRCode
+
 class QRCode8BitTests: XCTestCase {
 	
 	func testQRCode8Bi_SHA3_384 () throws {

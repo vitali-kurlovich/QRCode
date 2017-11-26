@@ -10,7 +10,7 @@
 		5D3148181FBA34D400EE3BB5 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3148171FBA34D400EE3BB5 /* QRCode.framework */; };
 		5D3148191FBA34D400EE3BB5 /* QRCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3148171FBA34D400EE3BB5 /* QRCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5D55E20C1FBA273F00D9FCC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D55E20B1FBA273F00D9FCC0 /* AppDelegate.swift */; };
-		5D55E20E1FBA273F00D9FCC0 /* ExampleQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D55E20D1FBA273F00D9FCC0 /* ExampleQRCodeViewController.swift */; };
+		5D55E20E1FBA273F00D9FCC0 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D55E20D1FBA273F00D9FCC0 /* ExampleViewController.swift */; };
 		5D55E2111FBA273F00D9FCC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D55E20F1FBA273F00D9FCC0 /* Main.storyboard */; };
 		5D55E2131FBA273F00D9FCC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D55E2121FBA273F00D9FCC0 /* Assets.xcassets */; };
 		5D55E2161FBA273F00D9FCC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D55E2141FBA273F00D9FCC0 /* LaunchScreen.storyboard */; };
@@ -53,7 +53,7 @@
 		5D3148171FBA34D400EE3BB5 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D55E2081FBA273F00D9FCC0 /* QRCodeViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D55E20B1FBA273F00D9FCC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D55E20D1FBA273F00D9FCC0 /* ExampleQRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleQRCodeViewController.swift; sourceTree = "<group>"; };
+		5D55E20D1FBA273F00D9FCC0 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		5D55E2101FBA273F00D9FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D55E2121FBA273F00D9FCC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D55E2151FBA273F00D9FCC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5D55E20B1FBA273F00D9FCC0 /* AppDelegate.swift */,
-				5D55E20D1FBA273F00D9FCC0 /* ExampleQRCodeViewController.swift */,
+				5D55E20D1FBA273F00D9FCC0 /* ExampleViewController.swift */,
 				5D55E20F1FBA273F00D9FCC0 /* Main.storyboard */,
 				5D55E2121FBA273F00D9FCC0 /* Assets.xcassets */,
 				5D55E2141FBA273F00D9FCC0 /* LaunchScreen.storyboard */,
@@ -279,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D55E20E1FBA273F00D9FCC0 /* ExampleQRCodeViewController.swift in Sources */,
+				5D55E20E1FBA273F00D9FCC0 /* ExampleViewController.swift in Sources */,
 				5D55E20C1FBA273F00D9FCC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

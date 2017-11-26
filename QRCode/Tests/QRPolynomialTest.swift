@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import QRCode
+
 class QRPolynomialTest: XCTestCase {
 
 	func testQRPolynomial() {

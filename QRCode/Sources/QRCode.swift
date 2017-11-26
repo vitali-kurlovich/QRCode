@@ -48,7 +48,10 @@ import Foundation
 	
 	
 	public init(_ data:String, _ errorCorrection : ErrorCorrectionLevel = .H) throws {
-		try self.init(data.data(using: .shiftJIS, allowLossyConversion: true)!, errorCorrection)
+		self.data = data.data(using: .shiftJIS, allowLossyConversion: true)!
+		self.errorCorrection = errorCorrection
+		
+		modules = try QRCodeProcessor.getMinimumQRCode(data, self.errorCorrection)
 	}
 	
 	public init(_ data:Data, _ errorCorrection : ErrorCorrectionLevel = .H) throws {

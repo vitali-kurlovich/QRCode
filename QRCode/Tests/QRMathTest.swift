@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import QRCode
+
 class QRMathTest: XCTestCase {
 	
 	func testQRMath() {
