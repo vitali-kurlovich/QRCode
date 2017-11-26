@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import QRCode
+import QRCodeGenerator
 
 
 class ExampleViewController: UIViewController , UITextFieldDelegate {

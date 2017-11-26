@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="CR0-zX-kvI" customClass="QRCodeView" customModule="QRCode">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="CR0-zX-kvI" customClass="QRCodeView" customModule="QRCodeGenerator">
                                 <rect key="frame" x="66" y="28" width="188" height="188"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="CR0-zX-kvI" secondAttribute="centerX" id="eT8-iZ-l0o"/>
