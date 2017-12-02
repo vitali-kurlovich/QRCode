@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5DBC6A4E1FCB2BC700E9DE71"
-               BuildableName = "QRCode.framework"
+               BuildableName = "QRCodeGenerator.framework"
                BlueprintName = "QRCodeiOS"
                ReferencedContainer = "container:QRCode.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5DBC6A4E1FCB2BC700E9DE71"
-            BuildableName = "QRCode.framework"
+            BuildableName = "QRCodeGenerator.framework"
             BlueprintName = "QRCodeiOS"
             ReferencedContainer = "container:QRCode.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5DBC6A4E1FCB2BC700E9DE71"
-            BuildableName = "QRCode.framework"
+            BuildableName = "QRCodeGenerator.framework"
             BlueprintName = "QRCodeiOS"
             ReferencedContainer = "container:QRCode.xcodeproj">
          </BuildableReference>
@@ -86,7 +86,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5DBC6A4E1FCB2BC700E9DE71"
-            BuildableName = "QRCode.framework"
+            BuildableName = "QRCodeGenerator.framework"
             BlueprintName = "QRCodeiOS"
             ReferencedContainer = "container:QRCode.xcodeproj">
          </BuildableReference>

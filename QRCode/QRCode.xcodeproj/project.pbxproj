@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DBC6A581FCB2BC700E9DE71 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC6A4F1FCB2BC700E9DE71 /* QRCode.framework */; };
+		5DBC6A581FCB2BC700E9DE71 /* QRCodeGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC6A4F1FCB2BC700E9DE71 /* QRCodeGenerator.framework */; };
 		5DBC6A5F1FCB2BC700E9DE71 /* QRCodeiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBC6A511FCB2BC700E9DE71 /* QRCodeiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DBC6A741FCB2BE800E9DE71 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC6A6B1FCB2BE800E9DE71 /* QRCode.framework */; };
+		5DBC6A741FCB2BE800E9DE71 /* QRCodeGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC6A6B1FCB2BE800E9DE71 /* QRCodeGenerator.framework */; };
 		5DBC6A7B1FCB2BE800E9DE71 /* QRCodeOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBC6A6D1FCB2BE800E9DE71 /* QRCodeOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DBC6A901FCB2C1300E9DE71 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC6A871FCB2C1300E9DE71 /* QRCode.framework */; };
+		5DBC6A901FCB2C1300E9DE71 /* QRCodeGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC6A871FCB2C1300E9DE71 /* QRCodeGenerator.framework */; };
 		5DBC6A971FCB2C1300E9DE71 /* QRCodeTVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBC6A891FCB2C1300E9DE71 /* QRCodeTVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DBC6ABF1FCB2E0A00E9DE71 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC6AA31FCB2E0A00E9DE71 /* QRCode.swift */; };
 		5DBC6AC01FCB2E0A00E9DE71 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC6AA31FCB2E0A00E9DE71 /* QRCode.swift */; };
@@ -110,17 +110,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5DBC6A4F1FCB2BC700E9DE71 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBC6A4F1FCB2BC700E9DE71 /* QRCodeGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCodeGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBC6A511FCB2BC700E9DE71 /* QRCodeiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeiOS.h; sourceTree = "<group>"; };
 		5DBC6A521FCB2BC700E9DE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DBC6A571FCB2BC700E9DE71 /* QRCodeiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBC6A5E1FCB2BC700E9DE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DBC6A6B1FCB2BE800E9DE71 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBC6A6B1FCB2BE800E9DE71 /* QRCodeGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCodeGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBC6A6D1FCB2BE800E9DE71 /* QRCodeOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeOSX.h; sourceTree = "<group>"; };
 		5DBC6A6E1FCB2BE800E9DE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DBC6A731FCB2BE800E9DE71 /* QRCodeOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBC6A7A1FCB2BE800E9DE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DBC6A871FCB2C1300E9DE71 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBC6A871FCB2C1300E9DE71 /* QRCodeGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCodeGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBC6A891FCB2C1300E9DE71 /* QRCodeTVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeTVOS.h; sourceTree = "<group>"; };
 		5DBC6A8A1FCB2C1300E9DE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DBC6A8F1FCB2C1300E9DE71 /* QRCodeTVOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeTVOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DBC6A581FCB2BC700E9DE71 /* QRCode.framework in Frameworks */,
+				5DBC6A581FCB2BC700E9DE71 /* QRCodeGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DBC6A741FCB2BE800E9DE71 /* QRCode.framework in Frameworks */,
+				5DBC6A741FCB2BE800E9DE71 /* QRCodeGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DBC6A901FCB2C1300E9DE71 /* QRCode.framework in Frameworks */,
+				5DBC6A901FCB2C1300E9DE71 /* QRCodeGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,11 +220,11 @@
 		5DBC6A311FCB073900E9DE71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5DBC6A4F1FCB2BC700E9DE71 /* QRCode.framework */,
+				5DBC6A4F1FCB2BC700E9DE71 /* QRCodeGenerator.framework */,
 				5DBC6A571FCB2BC700E9DE71 /* QRCodeiOSTests.xctest */,
-				5DBC6A6B1FCB2BE800E9DE71 /* QRCode.framework */,
+				5DBC6A6B1FCB2BE800E9DE71 /* QRCodeGenerator.framework */,
 				5DBC6A731FCB2BE800E9DE71 /* QRCodeOSXTests.xctest */,
-				5DBC6A871FCB2C1300E9DE71 /* QRCode.framework */,
+				5DBC6A871FCB2C1300E9DE71 /* QRCodeGenerator.framework */,
 				5DBC6A8F1FCB2C1300E9DE71 /* QRCodeTVOSTests.xctest */,
 			);
 			name = Products;
@@ -398,7 +398,7 @@
 			);
 			name = QRCodeiOS;
 			productName = QRCodeiOS;
-			productReference = 5DBC6A4F1FCB2BC700E9DE71 /* QRCode.framework */;
+			productReference = 5DBC6A4F1FCB2BC700E9DE71 /* QRCodeGenerator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5DBC6A561FCB2BC700E9DE71 /* QRCodeiOSTests */ = {
@@ -434,7 +434,7 @@
 			);
 			name = QRCodeOSX;
 			productName = QRCodeOSX;
-			productReference = 5DBC6A6B1FCB2BE800E9DE71 /* QRCode.framework */;
+			productReference = 5DBC6A6B1FCB2BE800E9DE71 /* QRCodeGenerator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5DBC6A721FCB2BE800E9DE71 /* QRCodeOSXTests */ = {
@@ -470,7 +470,7 @@
 			);
 			name = QRCodeTVOS;
 			productName = QRCodeTVOS;
-			productReference = 5DBC6A871FCB2C1300E9DE71 /* QRCode.framework */;
+			productReference = 5DBC6A871FCB2C1300E9DE71 /* QRCodeGenerator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5DBC6A8E1FCB2C1300E9DE71 /* QRCodeTVOSTests */ = {
@@ -855,7 +855,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.qrcode.QRCodeiOS;
-				PRODUCT_NAME = QRCode;
+				PRODUCT_NAME = QRCodeGenerator;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -876,7 +876,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.qrcode.QRCodeiOS;
-				PRODUCT_NAME = QRCode;
+				PRODUCT_NAME = QRCodeGenerator;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -927,7 +927,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = org.qrcode.QRCodeOSX;
-				PRODUCT_NAME = QRCode;
+				PRODUCT_NAME = QRCodeGenerator;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -950,7 +950,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = org.qrcode.QRCodeOSX;
-				PRODUCT_NAME = QRCode;
+				PRODUCT_NAME = QRCodeGenerator;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -1004,7 +1004,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.qrcode.QRCodeTVOS;
-				PRODUCT_NAME = QRCode;
+				PRODUCT_NAME = QRCodeGenerator;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -1026,7 +1026,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.qrcode.QRCodeTVOS;
-				PRODUCT_NAME = QRCode;
+				PRODUCT_NAME = QRCodeGenerator;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
