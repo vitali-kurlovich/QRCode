@@ -7,7 +7,7 @@
 
 import XCTest
 
-@testable import QRCode
+@testable import QRCodeGenerator
 
 class QRCodeTests: XCTestCase {
 	
